@@ -1074,6 +1074,9 @@ textarea{
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+  #open-menu{
+    display: none;
+  }
   .container{
     max-width: 768px;
   }
@@ -1165,11 +1168,17 @@ textarea{
     max-width: 1440px;
     margin: 0 auto;
     background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/herotablet.jpg);
-    background-size: 748px 436px;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 }
 @media screen and (min-width: 1200px) {
+  #open-menu{
+    display: none;
+  }
+  .extra{
+    display: block;
+  }
   .container{
     max-width: 1158px;
   }
@@ -1258,7 +1267,7 @@ textarea{
   max-width: 1440px;
   margin: 0 auto;
   background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-  background-size: 1158px 600px;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 }
