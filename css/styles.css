@@ -628,13 +628,14 @@ img {
  transition-duration: 250ms;
 }
 .modal_window{
+  margin-bottom: 20px;
   position: absolute;
  left:50%;
  top: 50%;
  transform: translate(-50%, -50%);
  opacity: 1;
-  width: 408px;
- height: 576px;
+  width: 392px;
+ height: 586px;
  background: #FCFCFC;
  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
  border-radius: 4px;
@@ -1079,6 +1080,7 @@ textarea{
   }
   .container{
     max-width: 768px;
+    margin: 0 auto;
   }
   .extra{
     display: block;
@@ -1101,6 +1103,10 @@ textarea{
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
+    flex-direction: unset;
+    align-items: unset;
+    padding-right: 0px;
+    
   }
   .benefits .big_titel{
     font-weight: 700;
@@ -1108,6 +1114,8 @@ textarea{
     line-height: 1.1em;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    padding-left: 0px;
+    text-align: left;
 
   }
 
@@ -1116,6 +1124,7 @@ textarea{
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: 0.02em;
+    width: auto;
   }
   .under_benefits{
     max-width: 356px;
@@ -1144,19 +1153,58 @@ textarea{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding-left: 108px;
+    padding-left: 0px;
     row-gap: 72px;
     column-gap: 24px;
+    justify-content: center;
+    
+
 
   }
   .input_footer{
     margin-left: 0px;
+    margin-right: 40px;
+  }
+  .end-form{
+    align-items: center; 
+    margin-top: 10px;
+  }
+  .third_titel{
+    text-align: center;
+  }
+  .modal_window{
+    top: 38%;
+  }
+.foot_input{
+  max-width: 264px;
+}
+  .mini_footer{
+    justify-content: unset;
+  }
+  .foot_button{
+
+    background: #4D5AE5;
+    border: none;
+    display: flex;
+   align-items: center;
+   width: 165px;
+   height: 40px;
+   border-radius: 4px;
+   padding-top: 8px;
+   gap: 16px;
+   margin-top: 0%;
+  }
+  .text_footer{
+    text-align: none;
   }
   .social_footer {
     margin-left: 0px;
     margin-bottom: 30px;
   }
-
+  .text_footer{
+    text-align: left;
+  }
+  
   header {
     max-height: 85px;
   }
@@ -1171,6 +1219,20 @@ textarea{
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .modal_window{
+    margin-bottom: 0px;
+    position: absolute;
+   left:50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   opacity: 1;
+    width: 408px;
+   height: 576px;
+   background: #FCFCFC;
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 4px;
+   transition-duration: 250ms;
+  }
 }
 @media screen and (min-width: 1200px) {
   #open-menu{
@@ -1181,6 +1243,22 @@ textarea{
   }
   .container{
     max-width: 1158px;
+    margin: 0 auto;
+  }
+  .benefits{
+    padding-right: 0px;
+  }
+  .benefits .big_titel{
+    padding-left: 0px;
+    text-align: left;
+  }
+  .benefits .under_titel{
+    width: auto;
+    text-transform: none;
+    font-weight: unset;
+  }
+  .third_titel{
+    text-align: center;
   }
   .third_section {
     padding-bottom: 120px;
@@ -1223,10 +1301,7 @@ textarea{
   margin-left: 80px;
 }
 .end-form{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  display
   margin-top: 16px;
   gap: 24px;
 }
@@ -1240,20 +1315,45 @@ textarea{
   border-radius: 3%;
   padding: 8px 16px;
 }
+.mini_footer{
+  display: block;
+}
+.text_footer{
+  text-align: left;
+}
+
+.real_end{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  column-gap: 0;
+ 
+
+}
+.end-form{
+  align-items: center; 
+  margin-top: 10px;
+}
 .text_footer{
   text-align: none;
 }
+.customer_number{
+  padding-left: 0%;
+  padding-right: 0px;
+  
+}
 .foot_button{
+
   background: #4D5AE5;
   border: none;
   display: flex;
-  justify-content: center;
  align-items: center;
  width: 165px;
  height: 40px;
  border-radius: 4px;
- padding: 8px 24px;
+ padding-top: 8px;
  gap: 16px;
+ margin-top: 0%;
 }
 .second_section {
   padding-top: 120px;
@@ -1269,5 +1369,19 @@ textarea{
   background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+}
+.modal_window{
+  margin-bottom: 0px;
+  position: absolute;
+ left:50%;
+ top: 50%;
+ transform: translate(-50%, -50%);
+ opacity: 1;
+  width: 408px;
+ height: 576px;
+ background: #FCFCFC;
+ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+ border-radius: 4px;
+ transition-duration: 250ms;
 }
 }
