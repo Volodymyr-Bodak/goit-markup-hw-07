@@ -171,7 +171,7 @@ button {
 
 }
 .benefits .big_titel{
-  padding-left: 100px;
+  padding-left: 0px;
   color: #2E2F42;
   font-weight: 700;
   font-size: 36px;
@@ -189,7 +189,7 @@ button {
   font-size: 16px;
   line-height: 1.5em;
   letter-spacing: 0.02em;
-  width: 396px;
+  max-width: 396px;
   
 }
 .list_downsize .big_titel_two {
@@ -223,8 +223,7 @@ button {
   max-width: 1440px;
   margin: 0 auto;
   background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/heroimage.jpg);
-  background-size: 100% 100%;
-  
+  background-size: cover;
   background-repeat: no-repeat;
 
 }
@@ -258,7 +257,7 @@ button {
 }
 .container {
   max-width: 480px;
-  margin: 0, auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -292,8 +291,7 @@ header {
   column-gap: 24px;
   display: flex;
   flex-direction: row;
-  padding-right: 76px;
- 
+  justify-content: center;
  
   
 }
@@ -352,7 +350,7 @@ img {
   justify-content: center;
 }
 .under_benefits {
-  max-width: 264px;
+  max-width: 396px;
 }
 .text_one {
   padding-top: 32px ;
@@ -1004,15 +1002,16 @@ ul {
   padding-top: 24px;
   padding-bottom: 40px;
 }
-.menu-navigaton{
+.menu-navigation{
   position: relative;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding-top: 24px;
   padding-bottom: 40px;
+  gap: 30px;
 }
+
 .menu-dot{
   color: #2E2F42;
   font-weight: 700;
@@ -1032,8 +1031,9 @@ font-size: 36px;
 line-height: 1.1em;
 letter-spacing: 0.02em;
 display: block;
-
+color:  #4D5AE5;
 }
+
 .link_two{
   display: block;
   margin-top: 30px;
@@ -1049,6 +1049,7 @@ letter-spacing: 0.02em;
   justify-content: center;
 }
 .all{
+ 
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -1073,11 +1074,34 @@ textarea{
     background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
   }
 }
+@media screen and (min-width: 320px) and (max-width: 479px){
+  .container{
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .foot_input{
+    width: auto;
+  }
+  .first_section{
+    background-size: cover;
+
+  }
+  .benefits .under_titel{
+    width: auto;
+  }
+  .benefits .big_titel{
+    padding-left: 0px;
+  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   #open-menu{
     display: none;
   }
+  .benefits .under_benefits{
+   max-width: 396px;
+ }
+
   .container{
     max-width: 768px;
     margin: 0 auto;
@@ -1235,6 +1259,9 @@ textarea{
   }
 }
 @media screen and (min-width: 1200px) {
+  .third_section{
+    display: block;
+  }
   #open-menu{
     display: none;
   }
@@ -1383,5 +1410,8 @@ textarea{
  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
  border-radius: 4px;
  transition-duration: 250ms;
+}
+.under_benefits {
+  max-width: 264px;
 }
 }
